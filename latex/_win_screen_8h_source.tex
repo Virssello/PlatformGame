@@ -1,0 +1,41 @@
+\hypertarget{_win_screen_8h_source}{}\doxysection{Win\+Screen.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by 48510 on 12.11.2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef MAIN\_CPP\_WINSCREEN\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MAIN\_CPP\_WINSCREEN\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}State.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Game.h"{}}}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_win_screen}{WinScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_state}{State}}\{}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_win_screen_a20e788bc7d6f0a8a5c1a023bc232cb41}{WinScreen}}(GameDataRef data,\textcolor{keywordtype}{float} czas);}
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_win_screen_a7d3e7510af43741703e7dbb2658f2125}{Draw}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_win_screen_a29713677b544741921be33724b5c17d7}{Update}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_win_screen_ad0fa2a796b973d60de878e35f010e1f8}{HandleInput}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_win_screen_a26698281ed08ab67a67e6238999b1f5f}{Init}}();}
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     std::string tmp;}
+\DoxyCodeLine{28     std::vector<float> score;}
+\DoxyCodeLine{29     std:: ifstream readFile;}
+\DoxyCodeLine{30     sf::Text tekst;}
+\DoxyCodeLine{31     sf::Text tekst2;}
+\DoxyCodeLine{32     sf::Font font;}
+\DoxyCodeLine{33     sf::Sprite winState;}
+\DoxyCodeLine{34     sf::Texture texWin;}
+\DoxyCodeLine{35     sf::View endCam;}
+\DoxyCodeLine{36     \textcolor{comment}{//global data accessor}}
+\DoxyCodeLine{37     GameDataRef \_data;}
+\DoxyCodeLine{38     \textcolor{keywordtype}{float} \_czas;}
+\DoxyCodeLine{39 \};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//MAIN\_CPP\_WINSCREEN\_H}}
+
+\end{DoxyCode}

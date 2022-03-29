@@ -1,0 +1,111 @@
+\hypertarget{class_menu}{}\doxysection{Menu Class Reference}
+\label{class_menu}\index{Menu@{Menu}}
+
+
+klasa odpowiedzialna za wyświetlenie okna menu  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_menu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_a15b3521b67715170d4aaa6324003cc11}\label{class_menu_a15b3521b67715170d4aaa6324003cc11}} 
+{\bfseries Menu} (Game\+Data\+Ref data)
+\begin{DoxyCompactList}\small\item\em funkcja rysująca menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_aea20febfb2bcda09545a377b40f806fd}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em funkcja rysująca elementy w oknie gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_af29d71473a414e31e914bc637840cb3e}{Update}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za bieżacy stan ekranu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a0cb3596524ed7fd021f999860b563bf8}{Handle\+Input}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obsługująca urządzenia końcowe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_menu_a2d4c37774fe4c5efe08ee436b0bb1c76}{Init}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za konstruktory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_menu_af250ed9c479be1258c5803b1f7065e4e}\label{class_menu_af250ed9c479be1258c5803b1f7065e4e}} 
+sf\+::\+Sprite {\bfseries menu}
+\item 
+\mbox{\Hypertarget{class_menu_a82b5aca509205230e6c7b2cdc205e88d}\label{class_menu_a82b5aca509205230e6c7b2cdc205e88d}} 
+sf\+::\+Texture {\bfseries tex\+Menu}
+\item 
+\mbox{\Hypertarget{class_menu_aac2e2d42bca3762c100cc679d19130de}\label{class_menu_aac2e2d42bca3762c100cc679d19130de}} 
+Game\+Data\+Ref {\bfseries \+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa odpowiedzialna za wyświetlenie okna menu 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menu_aea20febfb2bcda09545a377b40f806fd}\label{class_menu_aea20febfb2bcda09545a377b40f806fd}} 
+\index{Menu@{Menu}!Draw@{Draw}}
+\index{Draw@{Draw}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Menu\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja rysująca elementy w oknie gry 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_menu_a0cb3596524ed7fd021f999860b563bf8}\label{class_menu_a0cb3596524ed7fd021f999860b563bf8}} 
+\index{Menu@{Menu}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily void Menu\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja obsługująca urządzenia końcowe 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_menu_a2d4c37774fe4c5efe08ee436b0bb1c76}\label{class_menu_a2d4c37774fe4c5efe08ee436b0bb1c76}} 
+\index{Menu@{Menu}!Init@{Init}}
+\index{Init@{Init}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Menu\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za konstruktory 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_menu_af29d71473a414e31e914bc637840cb3e}\label{class_menu_af29d71473a414e31e914bc637840cb3e}} 
+\index{Menu@{Menu}!Update@{Update}}
+\index{Update@{Update}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Menu\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za bieżacy stan ekranu 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu.\+h\item 
+Menu.\+cpp\end{DoxyCompactItemize}

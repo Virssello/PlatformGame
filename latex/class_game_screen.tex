@@ -1,0 +1,212 @@
+\hypertarget{class_game_screen}{}\doxysection{Game\+Screen Class Reference}
+\label{class_game_screen}\index{GameScreen@{GameScreen}}
+
+
+klasa odpowiedzialna za główny ekran rozgrywki  
+
+
+
+
+{\ttfamily \#include $<$Game\+Screen.\+h$>$}
+
+Inheritance diagram for Game\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_screen_a820bf1dbe7f62be9c8af1b3fe4368b4c}\label{class_game_screen_a820bf1dbe7f62be9c8af1b3fe4368b4c}} 
+{\bfseries Game\+Screen} (Game\+Data\+Ref data)
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za obsługę ekranu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_screen_a7db74ce2c79535b01a24d090aefb223d}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em funkcja rysująca elementy w oknie gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_screen_a953a39e8ff9bc178dbcd9cfb9fcdc364}{Update}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za bieżacy stan ekranu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_screen_a2c1c9c4d649c67515452fe94547259aa}{Handle\+Input}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obsługująca urządzenia końcowe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_screen_a3ec220edcd329aa2fdcca2035ef369e6}{Init}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za konstruktory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_screen_a8046f688ecb5da76a1adccc4cd3a0a54}\label{class_game_screen_a8046f688ecb5da76a1adccc4cd3a0a54}} 
+enum {\bfseries Input\+States} \{ {\bfseries MOVE\+\_\+\+RIGHT} = 3
+, {\bfseries MOVE\+\_\+\+LEFT} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_screen_a98f3a6f01cb1dbf50352cd09e0733aed}\label{class_game_screen_a98f3a6f01cb1dbf50352cd09e0733aed}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries projetilesR}
+\item 
+\mbox{\Hypertarget{class_game_screen_a10c6bee83e8b0778b20a46359055a6db}\label{class_game_screen_a10c6bee83e8b0778b20a46359055a6db}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries projetilesL}
+\item 
+\mbox{\Hypertarget{class_game_screen_aaf0b019cb5f93e3133f5d3403553721e}\label{class_game_screen_aaf0b019cb5f93e3133f5d3403553721e}} 
+sf\+::\+Texture {\bfseries tex\+Pocisk}
+\item 
+\mbox{\Hypertarget{class_game_screen_a6e9e8700640b9b189cb72d8dde4894a7}\label{class_game_screen_a6e9e8700640b9b189cb72d8dde4894a7}} 
+std\+::ofstream {\bfseries write\+File}
+\item 
+\mbox{\Hypertarget{class_game_screen_a0cbed43e6837d8f20dc2e88fd15c9681}\label{class_game_screen_a0cbed43e6837d8f20dc2e88fd15c9681}} 
+int {\bfseries punkty}
+\item 
+\mbox{\Hypertarget{class_game_screen_ad3cc5c19faa7d933d84acdbb60d19f63}\label{class_game_screen_ad3cc5c19faa7d933d84acdbb60d19f63}} 
+int {\bfseries m\+\_\+\+Move\+State}
+\item 
+\mbox{\Hypertarget{class_game_screen_a1ca1d155a4a3a89ab63f29ed8d193271}\label{class_game_screen_a1ca1d155a4a3a89ab63f29ed8d193271}} 
+sf\+::\+Rectangle\+Shape {\bfseries koniec}
+\item 
+\mbox{\Hypertarget{class_game_screen_afb9f17061d21c2c3289c18e91bab9dc7}\label{class_game_screen_afb9f17061d21c2c3289c18e91bab9dc7}} 
+sf\+::\+Vector2f {\bfseries velocity} \{0,0\}
+\item 
+\mbox{\Hypertarget{class_game_screen_ae1680694ad2b97d1898a4d948890696c}\label{class_game_screen_ae1680694ad2b97d1898a4d948890696c}} 
+sf\+::\+Clock {\bfseries player\+Clock}
+\item 
+\mbox{\Hypertarget{class_game_screen_a4e57f80d60470b52a12ac71610388bec}\label{class_game_screen_a4e57f80d60470b52a12ac71610388bec}} 
+sf\+::\+Texture {\bfseries texture}
+\item 
+\mbox{\Hypertarget{class_game_screen_ac8f0faab65e8bd6b32c32ac95a38dd59}\label{class_game_screen_ac8f0faab65e8bd6b32c32ac95a38dd59}} 
+sf\+::\+Sprite {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_game_screen_a3be3bd62ce44d065d1d6a2790523d049}\label{class_game_screen_a3be3bd62ce44d065d1d6a2790523d049}} 
+sf\+::\+Texture {\bfseries finish}
+\item 
+\mbox{\Hypertarget{class_game_screen_ae0f6f492c1e768fcc204fc9b7e7b62d4}\label{class_game_screen_ae0f6f492c1e768fcc204fc9b7e7b62d4}} 
+sf\+::\+Int\+Rect {\bfseries rect\+Source\+Sprite} \{0, 0, 20, 30\}
+\item 
+\mbox{\Hypertarget{class_game_screen_a452f8b9f4166cbd3bb5188481ea3b9f1}\label{class_game_screen_a452f8b9f4166cbd3bb5188481ea3b9f1}} 
+sf\+::\+Rectangle\+Shape {\bfseries tlo}
+\item 
+\mbox{\Hypertarget{class_game_screen_a4521e2f713aa63c0c4792432f1d0dda9}\label{class_game_screen_a4521e2f713aa63c0c4792432f1d0dda9}} 
+sf\+::\+Texture {\bfseries texture1}
+\item 
+\mbox{\Hypertarget{class_game_screen_a9e5fa4715c9a8fe0b2ec4af18fd9a2f3}\label{class_game_screen_a9e5fa4715c9a8fe0b2ec4af18fd9a2f3}} 
+sf\+::\+Texture {\bfseries tex\+Platform}
+\item 
+\mbox{\Hypertarget{class_game_screen_a4ae4463c6c7c5210784094bc74db6423}\label{class_game_screen_a4ae4463c6c7c5210784094bc74db6423}} 
+sf\+::\+Texture {\bfseries tex\+Coin}
+\item 
+\mbox{\Hypertarget{class_game_screen_a1eb7df2ed5b4b812d261116526251ddb}\label{class_game_screen_a1eb7df2ed5b4b812d261116526251ddb}} 
+sf\+::\+Texture {\bfseries tex\+Enemies}
+\item 
+\mbox{\Hypertarget{class_game_screen_a68cb9dce9f19c34f57e34bcdc2958629}\label{class_game_screen_a68cb9dce9f19c34f57e34bcdc2958629}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries platforms}
+\item 
+\mbox{\Hypertarget{class_game_screen_aeb759daa3478c23cc58dd32d3526de01}\label{class_game_screen_aeb759daa3478c23cc58dd32d3526de01}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries coins}
+\item 
+\mbox{\Hypertarget{class_game_screen_a7061e3c3458b63e9e2d057d0bd9f4a09}\label{class_game_screen_a7061e3c3458b63e9e2d057d0bd9f4a09}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries enemies}
+\item 
+\mbox{\Hypertarget{class_game_screen_adb3551653a87ba0642cacab76f292f51}\label{class_game_screen_adb3551653a87ba0642cacab76f292f51}} 
+\mbox{\hyperlink{class_map_object}{Map\+Object}} {\bfseries objects}
+\item 
+\mbox{\Hypertarget{class_game_screen_a947d6d7f9dd2fdc8cacaffa6b78187c4}\label{class_game_screen_a947d6d7f9dd2fdc8cacaffa6b78187c4}} 
+sf\+::\+Texture {\bfseries tex\+Spikes}
+\item 
+\mbox{\Hypertarget{class_game_screen_a8e5f00a4ae58ead30c1e03eb97fe2914}\label{class_game_screen_a8e5f00a4ae58ead30c1e03eb97fe2914}} 
+std\+::vector$<$ sf\+::\+Sprite $>$ {\bfseries spikes}
+\item 
+\mbox{\Hypertarget{class_game_screen_a075c09e448ec93acee6b31d111690b89}\label{class_game_screen_a075c09e448ec93acee6b31d111690b89}} 
+sf\+::\+Clock {\bfseries clock}
+\item 
+\mbox{\Hypertarget{class_game_screen_aec301c69de14a199362c76ebde82761d}\label{class_game_screen_aec301c69de14a199362c76ebde82761d}} 
+sf\+::\+Clock {\bfseries clock2}
+\item 
+\mbox{\Hypertarget{class_game_screen_a95b1b32a53b1515258fb4b95377563a6}\label{class_game_screen_a95b1b32a53b1515258fb4b95377563a6}} 
+bool {\bfseries is\+Jumping} =true
+\item 
+\mbox{\Hypertarget{class_game_screen_a1f04f3daf4d5ce651dbf5cd0dc271159}\label{class_game_screen_a1f04f3daf4d5ce651dbf5cd0dc271159}} 
+bool {\bfseries shoot} =true
+\item 
+\mbox{\Hypertarget{class_game_screen_a236829e76d25cf9f1cbf156cd3ad48b6}\label{class_game_screen_a236829e76d25cf9f1cbf156cd3ad48b6}} 
+sf\+::\+Text {\bfseries czas}
+\item 
+\mbox{\Hypertarget{class_game_screen_a281b9fa0f28a8488a54359fc2af02354}\label{class_game_screen_a281b9fa0f28a8488a54359fc2af02354}} 
+sf\+::\+Font {\bfseries font}
+\item 
+\mbox{\Hypertarget{class_game_screen_a0ec3010936e26fecbccb477e1af2aad6}\label{class_game_screen_a0ec3010936e26fecbccb477e1af2aad6}} 
+sf\+::\+Text {\bfseries tekst}
+\item 
+\mbox{\Hypertarget{class_game_screen_a6043ff2762e94be9a5d309d26b77d7b7}\label{class_game_screen_a6043ff2762e94be9a5d309d26b77d7b7}} 
+sf\+::\+Text {\bfseries tekst2}
+\item 
+\mbox{\Hypertarget{class_game_screen_ae4106579ce9c37c3f7aae2a52512b662}\label{class_game_screen_ae4106579ce9c37c3f7aae2a52512b662}} 
+sf\+::\+View {\bfseries m\+\_\+\+Player\+Camera}
+\item 
+\mbox{\Hypertarget{class_game_screen_a34d729078c5e102933138859466791bc}\label{class_game_screen_a34d729078c5e102933138859466791bc}} 
+Game\+Data\+Ref {\bfseries \+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa odpowiedzialna za główny ekran rozgrywki 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_screen_a7db74ce2c79535b01a24d090aefb223d}\label{class_game_screen_a7db74ce2c79535b01a24d090aefb223d}} 
+\index{GameScreen@{GameScreen}!Draw@{Draw}}
+\index{Draw@{Draw}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Game\+Screen\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja rysująca elementy w oknie gry 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_game_screen_a2c1c9c4d649c67515452fe94547259aa}\label{class_game_screen_a2c1c9c4d649c67515452fe94547259aa}} 
+\index{GameScreen@{GameScreen}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily void Game\+Screen\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja obsługująca urządzenia końcowe 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_game_screen_a3ec220edcd329aa2fdcca2035ef369e6}\label{class_game_screen_a3ec220edcd329aa2fdcca2035ef369e6}} 
+\index{GameScreen@{GameScreen}!Init@{Init}}
+\index{Init@{Init}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Screen\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za konstruktory 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_game_screen_a953a39e8ff9bc178dbcd9cfb9fcdc364}\label{class_game_screen_a953a39e8ff9bc178dbcd9cfb9fcdc364}} 
+\index{GameScreen@{GameScreen}!Update@{Update}}
+\index{Update@{Update}!GameScreen@{GameScreen}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Screen\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za bieżacy stan ekranu 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Screen.\+h\item 
+Game\+Screen.\+cpp\end{DoxyCompactItemize}

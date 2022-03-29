@@ -1,0 +1,41 @@
+\hypertarget{_lose_screen_8h_source}{}\doxysection{Lose\+Screen.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by 48510 on 12.11.2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef MAIN\_CPP\_LOSESCREEN\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MAIN\_CPP\_LOSESCREEN\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}State.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Game.h"{}}}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_lose_screen}{LoseScreen}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_state}{State}}\{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_lose_screen_a0d1b19be932a48a274acef215f9fd3d7}{LoseScreen}}(GameDataRef datam,\textcolor{keywordtype}{float} czas);}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lose_screen_a417241ab9386888c81c3c6b880a22ddf}{Draw}}();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lose_screen_a83b518ca98090d9d32f3a4ee2fd86391}{Update}}();}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lose_screen_a85fd4713d18d2190af7517d6064cf45a}{HandleInput}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lose_screen_aa5bcb095c24de4aafc63b195246b02d4}{Init}}();}
+\DoxyCodeLine{27 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     std::string tmp;}
+\DoxyCodeLine{29     std::vector<float> score;}
+\DoxyCodeLine{30     std:: ifstream readFile;}
+\DoxyCodeLine{31     sf::Text tekst;}
+\DoxyCodeLine{32     sf::Text tekst2;}
+\DoxyCodeLine{33     sf::Font font;}
+\DoxyCodeLine{34     sf::Sprite loseState;}
+\DoxyCodeLine{35     sf::Texture texLose;}
+\DoxyCodeLine{36     sf::View endCam;}
+\DoxyCodeLine{37     \textcolor{comment}{//global data accessor}}
+\DoxyCodeLine{38     GameDataRef \_data;}
+\DoxyCodeLine{39     \textcolor{keywordtype}{float} \_czas;}
+\DoxyCodeLine{40 \};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//MAIN\_CPP\_LOSESCREEN\_H}}
+
+\end{DoxyCode}

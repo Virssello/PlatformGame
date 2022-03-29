@@ -1,0 +1,33 @@
+\hypertarget{_game_8h_source}{}\doxysection{Game.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by 48510 on 12.11.2021.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef MAIN\_CPP\_GAME\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define MAIN\_CPP\_GAME\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}StateWrapper.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_game_data}{GameData}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_state_wrapper}{StateWrapper}} wrapper;}
+\DoxyCodeLine{15     sf::RenderWindow window;}
+\DoxyCodeLine{16 \};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{typedef} std::shared\_ptr<GameData> GameDataRef;}
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}} \{}
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_game}{Game}}(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height,std::string title);}
+\DoxyCodeLine{23 \textcolor{keyword}{private}:}
+\DoxyCodeLine{24     GameDataRef \_data = std::make\_shared<GameData>();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} Run();}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//MAIN\_CPP\_GAME\_H}}
+
+\end{DoxyCode}

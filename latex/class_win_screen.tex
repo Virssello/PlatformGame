@@ -1,0 +1,135 @@
+\hypertarget{class_win_screen}{}\doxysection{Win\+Screen Class Reference}
+\label{class_win_screen}\index{WinScreen@{WinScreen}}
+
+
+klasa odpowiedzialna za wyświetlanie ekranu gry w momencie wygranej  
+
+
+
+
+{\ttfamily \#include $<$Win\+Screen.\+h$>$}
+
+Inheritance diagram for Win\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_win_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_win_screen_a20e788bc7d6f0a8a5c1a023bc232cb41}\label{class_win_screen_a20e788bc7d6f0a8a5c1a023bc232cb41}} 
+{\bfseries Win\+Screen} (Game\+Data\+Ref data, float czas)
+\begin{DoxyCompactList}\small\item\em funkcja rysująca ekran po wygraniu rozgrywki \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_win_screen_a7d3e7510af43741703e7dbb2658f2125}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em funkcja rysująca elementy w oknie gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_win_screen_a29713677b544741921be33724b5c17d7}{Update}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za bieżacy stan ekranu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_win_screen_ad0fa2a796b973d60de878e35f010e1f8}{Handle\+Input}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obsługująca urządzenia końcowe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_win_screen_a26698281ed08ab67a67e6238999b1f5f}{Init}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za konstruktory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_win_screen_a5a10ead42eae33269870ead1d4cb81df}\label{class_win_screen_a5a10ead42eae33269870ead1d4cb81df}} 
+std\+::string {\bfseries tmp}
+\item 
+\mbox{\Hypertarget{class_win_screen_ab9c56df3c6b984f96b5b77892607125e}\label{class_win_screen_ab9c56df3c6b984f96b5b77892607125e}} 
+std\+::vector$<$ float $>$ {\bfseries score}
+\item 
+\mbox{\Hypertarget{class_win_screen_a700ff3aca75c01ae42ede540e0d14f84}\label{class_win_screen_a700ff3aca75c01ae42ede540e0d14f84}} 
+std\+::ifstream {\bfseries read\+File}
+\item 
+\mbox{\Hypertarget{class_win_screen_a24663537ef072d00097104d21f457d51}\label{class_win_screen_a24663537ef072d00097104d21f457d51}} 
+sf\+::\+Text {\bfseries tekst}
+\item 
+\mbox{\Hypertarget{class_win_screen_ad4df53a128e7091425181bc40fc72e27}\label{class_win_screen_ad4df53a128e7091425181bc40fc72e27}} 
+sf\+::\+Text {\bfseries tekst2}
+\item 
+\mbox{\Hypertarget{class_win_screen_a2839863d3788418ad35168a5aa4e4065}\label{class_win_screen_a2839863d3788418ad35168a5aa4e4065}} 
+sf\+::\+Font {\bfseries font}
+\item 
+\mbox{\Hypertarget{class_win_screen_ab0ddacdf92b48bb49be7a5da38ce6276}\label{class_win_screen_ab0ddacdf92b48bb49be7a5da38ce6276}} 
+sf\+::\+Sprite {\bfseries win\+State}
+\item 
+\mbox{\Hypertarget{class_win_screen_ab9da9b382006766dc2cfe7c02cd48bc8}\label{class_win_screen_ab9da9b382006766dc2cfe7c02cd48bc8}} 
+sf\+::\+Texture {\bfseries tex\+Win}
+\item 
+\mbox{\Hypertarget{class_win_screen_ac8b052d87f2f13014523f0859f189c00}\label{class_win_screen_ac8b052d87f2f13014523f0859f189c00}} 
+sf\+::\+View {\bfseries end\+Cam}
+\item 
+\mbox{\Hypertarget{class_win_screen_a8556506c361c51c5c5681d72ecb5ddc8}\label{class_win_screen_a8556506c361c51c5c5681d72ecb5ddc8}} 
+Game\+Data\+Ref {\bfseries \+\_\+data}
+\item 
+\mbox{\Hypertarget{class_win_screen_af66c0252219a42daea707cfcbc164d52}\label{class_win_screen_af66c0252219a42daea707cfcbc164d52}} 
+float {\bfseries \+\_\+czas}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa odpowiedzialna za wyświetlanie ekranu gry w momencie wygranej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_win_screen_a7d3e7510af43741703e7dbb2658f2125}\label{class_win_screen_a7d3e7510af43741703e7dbb2658f2125}} 
+\index{WinScreen@{WinScreen}!Draw@{Draw}}
+\index{Draw@{Draw}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Win\+Screen\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja rysująca elementy w oknie gry 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_win_screen_ad0fa2a796b973d60de878e35f010e1f8}\label{class_win_screen_ad0fa2a796b973d60de878e35f010e1f8}} 
+\index{WinScreen@{WinScreen}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily void Win\+Screen\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja obsługująca urządzenia końcowe 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_win_screen_a26698281ed08ab67a67e6238999b1f5f}\label{class_win_screen_a26698281ed08ab67a67e6238999b1f5f}} 
+\index{WinScreen@{WinScreen}!Init@{Init}}
+\index{Init@{Init}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Win\+Screen\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za konstruktory 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_win_screen_a29713677b544741921be33724b5c17d7}\label{class_win_screen_a29713677b544741921be33724b5c17d7}} 
+\index{WinScreen@{WinScreen}!Update@{Update}}
+\index{Update@{Update}!WinScreen@{WinScreen}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Win\+Screen\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za bieżacy stan ekranu 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Win\+Screen.\+h\item 
+Win\+Screen.\+cpp\end{DoxyCompactItemize}

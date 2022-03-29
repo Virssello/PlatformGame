@@ -1,0 +1,36 @@
+\hypertarget{_state_wrapper_8h_source}{}\doxysection{State\+Wrapper.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef STATEWRAPPER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define STATEWRAPPER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}State.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{typedef} std::unique\_ptr<State> StateRef;}
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_state_wrapper}{StateWrapper}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_state_wrapper}{StateWrapper}}() \{ \}}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_state_wrapper}{\string~StateWrapper}}() \{ \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_wrapper_ac876402eb7ac9d5a477d8ac9afb5a016}{AddState}}(StateRef newState, \textcolor{keywordtype}{bool} isReplacing = \textcolor{keyword}{true});}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_state_wrapper_a87ce07c38acce55db997b00c22869567}{ProcessStateChanges}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     StateRef \&GetActiveState();}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     std::stack<StateRef> \_states;}
+\DoxyCodeLine{28     StateRef \_newState;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} \_isRemoving;}
+\DoxyCodeLine{31     \textcolor{keywordtype}{bool} \_isAdding, \_isReplacing;}
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STATEWRAPPER\_H}}
+
+\end{DoxyCode}

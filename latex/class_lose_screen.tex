@@ -1,0 +1,135 @@
+\hypertarget{class_lose_screen}{}\doxysection{Lose\+Screen Class Reference}
+\label{class_lose_screen}\index{LoseScreen@{LoseScreen}}
+
+
+klasa odpowiedzialna za wyświetlenie ekranu w momencie przegranej  
+
+
+
+
+{\ttfamily \#include $<$Lose\+Screen.\+h$>$}
+
+Inheritance diagram for Lose\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lose_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a0d1b19be932a48a274acef215f9fd3d7}\label{class_lose_screen_a0d1b19be932a48a274acef215f9fd3d7}} 
+{\bfseries Lose\+Screen} (Game\+Data\+Ref datam, float czas)
+\begin{DoxyCompactList}\small\item\em funkcja wyświetlająca ekran porażki \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lose_screen_a417241ab9386888c81c3c6b880a22ddf}{Draw}} ()
+\begin{DoxyCompactList}\small\item\em funkcja rysująca elementy w oknie gry \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lose_screen_a83b518ca98090d9d32f3a4ee2fd86391}{Update}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za bieżacy stan ekranu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lose_screen_a85fd4713d18d2190af7517d6064cf45a}{Handle\+Input}} ()
+\begin{DoxyCompactList}\small\item\em funkcja obsługująca urządzenia końcowe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lose_screen_aa5bcb095c24de4aafc63b195246b02d4}{Init}} ()
+\begin{DoxyCompactList}\small\item\em funkcja odpowiedzialna za konstruktory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_lose_screen_ac8f156e6f47a762f7c8956af40bdb722}\label{class_lose_screen_ac8f156e6f47a762f7c8956af40bdb722}} 
+std\+::string {\bfseries tmp}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a69f26ff55027e59cb996d5cd1bf1a285}\label{class_lose_screen_a69f26ff55027e59cb996d5cd1bf1a285}} 
+std\+::vector$<$ float $>$ {\bfseries score}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a1dfba8ccd0dc458feb7a5096dc0f0bda}\label{class_lose_screen_a1dfba8ccd0dc458feb7a5096dc0f0bda}} 
+std\+::ifstream {\bfseries read\+File}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a915930f1458814e9c18ab6c4c6b52114}\label{class_lose_screen_a915930f1458814e9c18ab6c4c6b52114}} 
+sf\+::\+Text {\bfseries tekst}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a2c789e7591ab3a786704aeae9bd30a3d}\label{class_lose_screen_a2c789e7591ab3a786704aeae9bd30a3d}} 
+sf\+::\+Text {\bfseries tekst2}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a7c1d0859178cc266f0fc186e51c0e589}\label{class_lose_screen_a7c1d0859178cc266f0fc186e51c0e589}} 
+sf\+::\+Font {\bfseries font}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a5dd5dbada0966b595a3913e8fec91063}\label{class_lose_screen_a5dd5dbada0966b595a3913e8fec91063}} 
+sf\+::\+Sprite {\bfseries lose\+State}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a8c3034900d88d86343615c963b5a74e0}\label{class_lose_screen_a8c3034900d88d86343615c963b5a74e0}} 
+sf\+::\+Texture {\bfseries tex\+Lose}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a0bbbe5a0bc9674059a29893bdad9732f}\label{class_lose_screen_a0bbbe5a0bc9674059a29893bdad9732f}} 
+sf\+::\+View {\bfseries end\+Cam}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a360b82ffa2ea78a7f944d79cda2e273c}\label{class_lose_screen_a360b82ffa2ea78a7f944d79cda2e273c}} 
+Game\+Data\+Ref {\bfseries \+\_\+data}
+\item 
+\mbox{\Hypertarget{class_lose_screen_a6a891daf5e73b216142b0064e3d5bf5d}\label{class_lose_screen_a6a891daf5e73b216142b0064e3d5bf5d}} 
+float {\bfseries \+\_\+czas}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa odpowiedzialna za wyświetlenie ekranu w momencie przegranej 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lose_screen_a417241ab9386888c81c3c6b880a22ddf}\label{class_lose_screen_a417241ab9386888c81c3c6b880a22ddf}} 
+\index{LoseScreen@{LoseScreen}!Draw@{Draw}}
+\index{Draw@{Draw}!LoseScreen@{LoseScreen}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Lose\+Screen\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja rysująca elementy w oknie gry 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_lose_screen_a85fd4713d18d2190af7517d6064cf45a}\label{class_lose_screen_a85fd4713d18d2190af7517d6064cf45a}} 
+\index{LoseScreen@{LoseScreen}!HandleInput@{HandleInput}}
+\index{HandleInput@{HandleInput}!LoseScreen@{LoseScreen}}
+\doxysubsubsection{\texorpdfstring{HandleInput()}{HandleInput()}}
+{\footnotesize\ttfamily void Lose\+Screen\+::\+Handle\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja obsługująca urządzenia końcowe 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_lose_screen_aa5bcb095c24de4aafc63b195246b02d4}\label{class_lose_screen_aa5bcb095c24de4aafc63b195246b02d4}} 
+\index{LoseScreen@{LoseScreen}!Init@{Init}}
+\index{Init@{Init}!LoseScreen@{LoseScreen}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Lose\+Screen\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za konstruktory 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_lose_screen_a83b518ca98090d9d32f3a4ee2fd86391}\label{class_lose_screen_a83b518ca98090d9d32f3a4ee2fd86391}} 
+\index{LoseScreen@{LoseScreen}!Update@{Update}}
+\index{Update@{Update}!LoseScreen@{LoseScreen}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Lose\+Screen\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+funkcja odpowiedzialna za bieżacy stan ekranu 
+
+
+
+Implements \mbox{\hyperlink{class_state}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lose\+Screen.\+h\item 
+Lose\+Screen.\+cpp\end{DoxyCompactItemize}

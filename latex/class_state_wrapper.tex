@@ -1,0 +1,62 @@
+\hypertarget{class_state_wrapper}{}\doxysection{State\+Wrapper Class Reference}
+\label{class_state_wrapper}\index{StateWrapper@{StateWrapper}}
+
+
+klasa odpowiedzialna za zarządzanie oknami gry  
+
+
+
+
+{\ttfamily \#include $<$State\+Wrapper.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_state_wrapper_ac876402eb7ac9d5a477d8ac9afb5a016}{Add\+State}} (State\+Ref new\+State, bool is\+Replacing=true)
+\begin{DoxyCompactList}\small\item\em Funkcja dodająca stan. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_wrapper_a87ce07c38acce55db997b00c22869567}\label{class_state_wrapper_a87ce07c38acce55db997b00c22869567}} 
+void {\bfseries Process\+State\+Changes} ()
+\begin{DoxyCompactList}\small\item\em Funkcja monitorujaca stan. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_wrapper_a9ae7047b144280e7750d669fdc03e1b0}\label{class_state_wrapper_a9ae7047b144280e7750d669fdc03e1b0}} 
+State\+Ref \& {\bfseries Get\+Active\+State} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_wrapper_a620270fb514d0f6c9c01959089669d9d}\label{class_state_wrapper_a620270fb514d0f6c9c01959089669d9d}} 
+std\+::stack$<$ State\+Ref $>$ {\bfseries \+\_\+states}
+\item 
+\mbox{\Hypertarget{class_state_wrapper_a83a7120c49b8d895366b65420e432145}\label{class_state_wrapper_a83a7120c49b8d895366b65420e432145}} 
+State\+Ref {\bfseries \+\_\+new\+State}
+\item 
+\mbox{\Hypertarget{class_state_wrapper_af95ef378df6ed0da3e791b9973c4bc5b}\label{class_state_wrapper_af95ef378df6ed0da3e791b9973c4bc5b}} 
+bool {\bfseries \+\_\+is\+Removing}
+\item 
+\mbox{\Hypertarget{class_state_wrapper_a6a0ecea37455c6527b830e74e7aca6ca}\label{class_state_wrapper_a6a0ecea37455c6527b830e74e7aca6ca}} 
+bool {\bfseries \+\_\+is\+Adding}
+\item 
+\mbox{\Hypertarget{class_state_wrapper_af8b2fd7f3cc2b81b36ed8d95c4dd6e3d}\label{class_state_wrapper_af8b2fd7f3cc2b81b36ed8d95c4dd6e3d}} 
+bool {\bfseries \+\_\+is\+Replacing}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+klasa odpowiedzialna za zarządzanie oknami gry 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_wrapper_ac876402eb7ac9d5a477d8ac9afb5a016}\label{class_state_wrapper_ac876402eb7ac9d5a477d8ac9afb5a016}} 
+\index{StateWrapper@{StateWrapper}!AddState@{AddState}}
+\index{AddState@{AddState}!StateWrapper@{StateWrapper}}
+\doxysubsubsection{\texorpdfstring{AddState()}{AddState()}}
+{\footnotesize\ttfamily void State\+Wrapper\+::\+Add\+State (\begin{DoxyParamCaption}\item[{State\+Ref}]{new\+State,  }\item[{bool}]{is\+Replacing = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodająca stan. 
+
+!\+Adding a new state to stack 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State\+Wrapper.\+h\item 
+State\+Wrapper.\+cpp\end{DoxyCompactItemize}
